@@ -1,0 +1,12 @@
+node_modules
+*.md
+.vscode
+.idea
+dist
+public
+*.js
+*.cjs
+*.html
+/src/components/ui/**
+/src/components/icons/**
+/src/lib/**
