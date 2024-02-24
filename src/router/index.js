@@ -80,12 +80,12 @@ const router = createRouter({
   ],
 });
 
-router.beforeEach((to, from, next) => {
-  if (to.name !== 'login' && !cookies.get('hexToken')) {
-    next({ name: 'login' });
-  } else {
-    next();
-  }
-});
+// router.beforeEach((to, from, next) => {
+//   if (to.name !== 'login' && !cookies.get('hexToken')) {
+//     next({ name: 'login' });
+//   } else {
+//     next();
+//   }
+// });
 
 export default router;

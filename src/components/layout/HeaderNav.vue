@@ -2,7 +2,7 @@
   <header class="bg-primary text-primary-foreground">
     <nav class="container flex lg:grid lg:grid-cols-12 py-4">
       <div class="col-span-2 text-lg lg:text-xl inline-flex items-center me-auto">
-        <a href="/">巧克力點心坊</a>
+        <a :href="`${location.origin}${location.pathname}#/`">巧克力點心坊</a>
       </div>
       <div class="lg:hidden space-x-3">
         <Popover v-if="$route.name !== 'order'">
@@ -63,7 +63,7 @@
               </li>
               <li>
                 <SheetClose>
-                  <RouterLink to="/login" v-if="!cookies.get('hexToken')">
+                  <RouterLink to="/login" v-if="!cookies.get('hexUid')">
                     <Button variant="outline"> 登入 </Button>
                   </RouterLink>
                   <RouterLink to="/admin" v-else>
