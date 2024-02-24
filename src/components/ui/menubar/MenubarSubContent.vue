@@ -1,11 +1,11 @@
 <script setup>
-import { computed } from "vue";
+import { computed } from 'vue';
 import {
   MenubarPortal,
   MenubarSubContent,
   useForwardPropsEmits,
-} from "radix-vue";
-import { cn } from "@/lib/utils";
+} from 'radix-vue';
+import { cn } from '@/lib/utils';
 
 const props = defineProps({
   forceMount: { type: Boolean, required: false },
@@ -26,13 +26,13 @@ const props = defineProps({
 });
 
 const emits = defineEmits([
-  "escapeKeyDown",
-  "pointerDownOutside",
-  "focusOutside",
-  "interactOutside",
-  "entryFocus",
-  "openAutoFocus",
-  "closeAutoFocus",
+  'escapeKeyDown',
+  'pointerDownOutside',
+  'focusOutside',
+  'interactOutside',
+  'entryFocus',
+  'openAutoFocus',
+  'closeAutoFocus',
 ]);
 
 const delegatedProps = computed(() => {

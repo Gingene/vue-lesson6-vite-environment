@@ -1,7 +1,7 @@
 <script setup>
-import { computed } from "vue";
-import { NavigationMenuContent, useForwardPropsEmits } from "radix-vue";
-import { cn } from "@/lib/utils";
+import { computed } from 'vue';
+import { NavigationMenuContent, useForwardPropsEmits } from 'radix-vue';
+import { cn } from '@/lib/utils';
 
 const props = defineProps({
   forceMount: { type: Boolean, required: false },
@@ -12,10 +12,10 @@ const props = defineProps({
 });
 
 const emits = defineEmits([
-  "escapeKeyDown",
-  "pointerDownOutside",
-  "focusOutside",
-  "interactOutside",
+  'escapeKeyDown',
+  'pointerDownOutside',
+  'focusOutside',
+  'interactOutside',
 ]);
 
 const delegatedProps = computed(() => {

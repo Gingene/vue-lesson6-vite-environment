@@ -1,5 +1,5 @@
 <script setup>
-import { NavigationMenuItem } from "radix-vue";
+import { NavigationMenuItem } from 'radix-vue';
 
 const props = defineProps({
   value: { type: String, required: false },

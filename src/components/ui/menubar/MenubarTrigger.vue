@@ -1,7 +1,7 @@
 <script setup>
-import { computed } from "vue";
-import { MenubarTrigger, useForwardProps } from "radix-vue";
-import { cn } from "@/lib/utils";
+import { computed } from 'vue';
+import { MenubarTrigger, useForwardProps } from 'radix-vue';
+import { cn } from '@/lib/utils';
 
 const props = defineProps({
   disabled: { type: Boolean, required: false },

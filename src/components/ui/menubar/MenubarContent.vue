@@ -1,14 +1,14 @@
 <script setup>
-import { computed } from "vue";
-import { MenubarContent, MenubarPortal, useForwardProps } from "radix-vue";
-import { cn } from "@/lib/utils";
+import { computed } from 'vue';
+import { MenubarContent, MenubarPortal, useForwardProps } from 'radix-vue';
+import { cn } from '@/lib/utils';
 
 const props = defineProps({
   forceMount: { type: Boolean, required: false },
   loop: { type: Boolean, required: false },
   side: { type: null, required: false },
   sideOffset: { type: Number, required: false, default: 8 },
-  align: { type: null, required: false, default: "start" },
+  align: { type: null, required: false, default: 'start' },
   alignOffset: { type: Number, required: false, default: -4 },
   avoidCollisions: { type: Boolean, required: false },
   collisionBoundary: { type: null, required: false },

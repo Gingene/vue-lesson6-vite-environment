@@ -1,5 +1,5 @@
 <script setup>
-import { MenubarGroup } from "radix-vue";
+import { MenubarGroup } from 'radix-vue';
 
 const props = defineProps({
   asChild: { type: Boolean, required: false },

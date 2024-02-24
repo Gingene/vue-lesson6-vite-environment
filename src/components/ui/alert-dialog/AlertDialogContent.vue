@@ -1,12 +1,12 @@
 <script setup>
-import { computed } from "vue";
+import { computed } from 'vue';
 import {
   AlertDialogContent,
   AlertDialogOverlay,
   AlertDialogPortal,
   useForwardPropsEmits,
-} from "radix-vue";
-import { cn } from "@/lib/utils";
+} from 'radix-vue';
+import { cn } from '@/lib/utils';
 
 const props = defineProps({
   forceMount: { type: Boolean, required: false },
@@ -17,12 +17,12 @@ const props = defineProps({
   class: { type: null, required: false },
 });
 const emits = defineEmits([
-  "escapeKeyDown",
-  "pointerDownOutside",
-  "focusOutside",
-  "interactOutside",
-  "openAutoFocus",
-  "closeAutoFocus",
+  'escapeKeyDown',
+  'pointerDownOutside',
+  'focusOutside',
+  'interactOutside',
+  'openAutoFocus',
+  'closeAutoFocus',
 ]);
 
 const delegatedProps = computed(() => {

@@ -1,8 +1,8 @@
 <script setup>
-import { computed } from "vue";
-import { NavigationMenuRoot, useForwardPropsEmits } from "radix-vue";
-import NavigationMenuViewport from "./NavigationMenuViewport.vue";
-import { cn } from "@/lib/utils";
+import { computed } from 'vue';
+import { NavigationMenuRoot, useForwardPropsEmits } from 'radix-vue';
+import { cn } from '@/lib/utils';
+import NavigationMenuViewport from './NavigationMenuViewport.vue';
 
 const props = defineProps({
   modelValue: { type: String, required: false },
@@ -16,7 +16,7 @@ const props = defineProps({
   class: { type: null, required: false },
 });
 
-const emits = defineEmits(["update:modelValue"]);
+const emits = defineEmits(['update:modelValue']);
 
 const delegatedProps = computed(() => {
   const { class: _, ...delegated } = props;

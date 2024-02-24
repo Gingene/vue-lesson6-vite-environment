@@ -1,10 +1,10 @@
 <script setup>
-import { computed } from "vue";
-import { ScrollAreaScrollbar, ScrollAreaThumb } from "radix-vue";
-import { cn } from "@/lib/utils";
+import { computed } from 'vue';
+import { ScrollAreaScrollbar, ScrollAreaThumb } from 'radix-vue';
+import { cn } from '@/lib/utils';
 
 const props = defineProps({
-  orientation: { type: String, required: false, default: "vertical" },
+  orientation: { type: String, required: false, default: 'vertical' },
   forceMount: { type: Boolean, required: false },
   asChild: { type: Boolean, required: false },
   as: { type: null, required: false },

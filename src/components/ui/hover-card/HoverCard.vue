@@ -1,5 +1,5 @@
 <script setup>
-import { HoverCardRoot, useForwardProps } from "radix-vue";
+import { HoverCardRoot, useForwardProps } from 'radix-vue';
 
 const props = defineProps({
   defaultOpen: { type: Boolean, required: false },

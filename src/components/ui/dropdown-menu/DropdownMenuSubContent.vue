@@ -1,7 +1,7 @@
 <script setup>
-import { computed } from "vue";
-import { DropdownMenuSubContent, useForwardPropsEmits } from "radix-vue";
-import { cn } from "@/lib/utils";
+import { computed } from 'vue';
+import { DropdownMenuSubContent, useForwardPropsEmits } from 'radix-vue';
+import { cn } from '@/lib/utils';
 
 const props = defineProps({
   forceMount: { type: Boolean, required: false },
@@ -21,13 +21,13 @@ const props = defineProps({
   class: { type: null, required: false },
 });
 const emits = defineEmits([
-  "escapeKeyDown",
-  "pointerDownOutside",
-  "focusOutside",
-  "interactOutside",
-  "entryFocus",
-  "openAutoFocus",
-  "closeAutoFocus",
+  'escapeKeyDown',
+  'pointerDownOutside',
+  'focusOutside',
+  'interactOutside',
+  'entryFocus',
+  'openAutoFocus',
+  'closeAutoFocus',
 ]);
 
 const delegatedProps = computed(() => {

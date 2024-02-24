@@ -1,7 +1,7 @@
 <script setup>
-import { computed } from "vue";
-import { MenubarRoot, useForwardPropsEmits } from "radix-vue";
-import { cn } from "@/lib/utils";
+import { computed } from 'vue';
+import { MenubarRoot, useForwardPropsEmits } from 'radix-vue';
+import { cn } from '@/lib/utils';
 
 const props = defineProps({
   modelValue: { type: String, required: false },
@@ -10,7 +10,7 @@ const props = defineProps({
   loop: { type: Boolean, required: false },
   class: { type: null, required: false },
 });
-const emits = defineEmits(["update:modelValue"]);
+const emits = defineEmits(['update:modelValue']);
 
 const delegatedProps = computed(() => {
   const { class: _, ...delegated } = props;

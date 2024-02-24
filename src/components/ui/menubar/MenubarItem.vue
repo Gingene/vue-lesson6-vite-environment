@@ -1,7 +1,7 @@
 <script setup>
-import { computed } from "vue";
-import { MenubarItem, useForwardPropsEmits } from "radix-vue";
-import { cn } from "@/lib/utils";
+import { computed } from 'vue';
+import { MenubarItem, useForwardPropsEmits } from 'radix-vue';
+import { cn } from '@/lib/utils';
 
 const props = defineProps({
   disabled: { type: Boolean, required: false },
@@ -12,7 +12,7 @@ const props = defineProps({
   inset: { type: Boolean, required: false },
 });
 
-const emits = defineEmits(["select"]);
+const emits = defineEmits(['select']);
 
 const delegatedProps = computed(() => {
   const { class: _, ...delegated } = props;

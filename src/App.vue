@@ -1,18 +1,12 @@
-<script setup></script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div>
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
   <RouterView />
+  <LoadingComponent />
+  <Toaster />
 </template>
+
+<script setup>
+import Toaster from '@/components/ui/toast/Toaster.vue';
+import LoadingComponent from './components/layout/LoadingComponent.vue';
+</script>
 
 <style scoped></style>

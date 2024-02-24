@@ -1,12 +1,12 @@
 <script setup>
-import { computed } from "vue";
+import { computed } from 'vue';
 import {
   MenubarCheckboxItem,
   MenubarItemIndicator,
   useForwardPropsEmits,
-} from "radix-vue";
-import { Check } from "lucide-vue-next";
-import { cn } from "@/lib/utils";
+} from 'radix-vue';
+import { Check } from 'lucide-vue-next';
+import { cn } from '@/lib/utils';
 
 const props = defineProps({
   checked: { type: [Boolean, String], required: false },
@@ -16,7 +16,7 @@ const props = defineProps({
   as: { type: null, required: false },
   class: { type: null, required: false },
 });
-const emits = defineEmits(["select", "update:checked"]);
+const emits = defineEmits(['select', 'update:checked']);
 
 const delegatedProps = computed(() => {
   const { class: _, ...delegated } = props;

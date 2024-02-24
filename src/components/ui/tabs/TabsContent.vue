@@ -1,7 +1,7 @@
 <script setup>
-import { computed } from "vue";
-import { TabsContent } from "radix-vue";
-import { cn } from "@/lib/utils";
+import { computed } from 'vue';
+import { TabsContent } from 'radix-vue';
+import { cn } from '@/lib/utils';
 
 const props = defineProps({
   value: { type: String, required: true },

@@ -1,7 +1,7 @@
 <script setup>
-import { computed } from "vue";
-import { RadioGroupRoot, useForwardPropsEmits } from "radix-vue";
-import { cn } from "@/lib/utils";
+import { computed } from 'vue';
+import { RadioGroupRoot, useForwardPropsEmits } from 'radix-vue';
+import { cn } from '@/lib/utils';
 
 const props = defineProps({
   modelValue: { type: String, required: false },
@@ -16,7 +16,7 @@ const props = defineProps({
   as: { type: null, required: false },
   class: { type: null, required: false },
 });
-const emits = defineEmits(["update:modelValue"]);
+const emits = defineEmits(['update:modelValue']);
 
 const delegatedProps = computed(() => {
   const { class: _, ...delegated } = props;

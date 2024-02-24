@@ -1,8 +1,8 @@
 <script setup>
-import { computed } from "vue";
-import { DropdownMenuSubTrigger, useForwardProps } from "radix-vue";
-import { ChevronRight } from "lucide-vue-next";
-import { cn } from "@/lib/utils";
+import { computed } from 'vue';
+import { DropdownMenuSubTrigger, useForwardProps } from 'radix-vue';
+import { ChevronRight } from 'lucide-vue-next';
+import { cn } from '@/lib/utils';
 
 const props = defineProps({
   disabled: { type: Boolean, required: false },
