@@ -1,0 +1,16 @@
+import{d as y,k as o,a as u,x as d,w as n,m as i,b as c,g as e,A as g,q as p,aG as q,a3 as f,n as _,G as h,I as m,aH as v,aI as w,aJ as C,aK as P}from"./index-NpP1bDLk.js";import{a as $,C as k}from"./chevrons-right-Chxtvsiq.js";/**
+ * @license lucide-vue-next v0.323.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const x=y("ChevronLeftIcon",[["path",{d:"m15 18-6-6 6-6",key:"1wnfg3"}]]);/**
+ * @license lucide-vue-next v0.323.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const B=y("ChevronRightIcon",[["path",{d:"m9 18 6-6-6-6",key:"mthhwq"}]]);/**
+ * @license lucide-vue-next v0.323.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const I=y("MoreHorizontalIcon",[["circle",{cx:"12",cy:"12",r:"1",key:"41hilf"}],["circle",{cx:"19",cy:"12",r:"1",key:"1wjl8i"}],["circle",{cx:"5",cy:"12",r:"1",key:"1pcz8c"}]]),R={__name:"PaginationEllipsis",props:{asChild:{type:Boolean,required:!1},as:{type:null,required:!1},class:{type:null,required:!1}},setup(l){const s=l,r=o(()=>{const{class:a,...t}=s;return t});return(a,t)=>(u(),d(e(q),g(r.value,{class:e(p)("w-9 h-9 flex items-center justify-center",s.class)}),{default:n(()=>[i(a.$slots,"default",{},()=>[c(e(I))])]),_:3},16,["class"]))}},G={__name:"PaginationFirst",props:{asChild:{type:Boolean,required:!1,default:!0},as:{type:null,required:!1},class:{type:null,required:!1}},setup(l){const s=l,r=o(()=>{const{class:a,...t}=s;return t});return(a,t)=>(u(),d(e(v),h(m(r.value)),{default:n(()=>[c(e(f),{class:_(e(p)("w-10 h-10 p-0",s.class)),variant:"outline"},{default:n(()=>[i(a.$slots,"default",{},()=>[c(e($),{class:"h-4 w-4"})])]),_:3},8,["class"])]),_:3},16))}},H={__name:"PaginationLast",props:{asChild:{type:Boolean,required:!1,default:!0},as:{type:null,required:!1},class:{type:null,required:!1}},setup(l){const s=l,r=o(()=>{const{class:a,...t}=s;return t});return(a,t)=>(u(),d(e(w),h(m(r.value)),{default:n(()=>[c(e(f),{class:_(e(p)("w-10 h-10 p-0",s.class)),variant:"outline"},{default:n(()=>[i(a.$slots,"default",{},()=>[c(e(k),{class:"h-4 w-4"})])]),_:3},8,["class"])]),_:3},16))}},b={__name:"PaginationNext",props:{asChild:{type:Boolean,required:!1,default:!0},as:{type:null,required:!1},class:{type:null,required:!1}},setup(l){const s=l,r=o(()=>{const{class:a,...t}=s;return t});return(a,t)=>(u(),d(e(C),h(m(r.value)),{default:n(()=>[c(e(f),{class:_(e(p)("w-10 h-10 p-0",s.class)),variant:"outline"},{default:n(()=>[i(a.$slots,"default",{},()=>[c(e(B),{class:"h-4 w-4"})])]),_:3},8,["class"])]),_:3},16))}},j={__name:"PaginationPrev",props:{asChild:{type:Boolean,required:!1,default:!0},as:{type:null,required:!1},class:{type:null,required:!1}},setup(l){const s=l,r=o(()=>{const{class:a,...t}=s;return t});return(a,t)=>(u(),d(e(P),h(m(r.value)),{default:n(()=>[c(e(f),{class:_(e(p)("w-10 h-10 p-0",s.class)),variant:"outline"},{default:n(()=>[i(a.$slots,"default",{},()=>[c(e(x),{class:"h-4 w-4"})])]),_:3},8,["class"])]),_:3},16))}};export{G as _,j as a,R as b,b as c,H as d};
