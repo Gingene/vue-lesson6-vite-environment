@@ -63,7 +63,7 @@
               </li>
               <li>
                 <SheetClose>
-                  <RouterLink to="/login" v-if="!cookies.get('hexUid')">
+                  <RouterLink to="/login" v-if="!cookies.get('hexToken')">
                     <Button variant="outline"> 登入 </Button>
                   </RouterLink>
                   <RouterLink to="/admin" v-else>

@@ -20,8 +20,8 @@ export const useUserStore = defineStore('user', () => {
     const { token, expired, uid } = data;
 
     document.cookie = `hexToken=${token};expires=${new Date(expired)}`;
-    document.cookie = `hexUid=${uid}`;
-    location.href = `${location.origin}/#/admin/products`;
+    // document.cookie = `hexUid=${uid}`;
+    location.href = `${location.origin}${location.pathname}#/admin/products`;
 
     toast({
       title: data.message,
@@ -43,7 +43,7 @@ export const useUserStore = defineStore('user', () => {
         description: '歡迎回來',
       });
     } catch (err) {
-      location.href = '/login';
+      location.href = `${location.origin}${location.pathname}#/login`;
     }
   };
 
@@ -52,9 +52,9 @@ export const useUserStore = defineStore('user', () => {
     // console.log(data);
 
     document.cookie = `hexToken=;expires=${new Date(0)}`;
-    document.cookie = `hexUid=`;
+    // document.cookie = `hexUid=;`;
 
-    location.href = '/';
+    location.href = `${location.origin}${location.pathname}#/`;
     toast({
       title: `${data.message}`,
       description: '',
