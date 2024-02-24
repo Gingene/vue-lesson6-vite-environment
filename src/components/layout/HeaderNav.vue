@@ -2,7 +2,7 @@
   <header class="bg-primary text-primary-foreground">
     <nav class="container flex lg:grid lg:grid-cols-12 py-4">
       <div class="col-span-2 text-lg lg:text-xl inline-flex items-center me-auto">
-        <a :href="`${location.origin}${location.pathname}#/`">巧克力點心坊</a>
+        <a :href="homeLink">巧克力點心坊</a>
       </div>
       <div class="lg:hidden space-x-3">
         <Popover v-if="$route.name !== 'order'">
@@ -63,7 +63,7 @@
               </li>
               <li>
                 <SheetClose>
-                  <RouterLink to="/login" v-if="!cookies.get('hexUid')">
+                  <RouterLink to="/login" v-if="!cookies.get('hexToken')">
                     <Button variant="outline"> 登入 </Button>
                   </RouterLink>
                   <RouterLink to="/admin" v-else>
@@ -125,7 +125,7 @@
           </PopoverContent>
         </Popover>
 
-        <RouterLink to="/login" v-if="!cookies.get('hexUid')">
+        <RouterLink to="/login" v-if="!cookies.get('hexToken')">
           <Button variant="outline"> 登入 </Button>
         </RouterLink>
         <RouterLink to="/admin" v-else>
@@ -136,7 +136,7 @@
   </header>
 </template>
 <script setup>
-import { onMounted } from 'vue';
+import { onMounted, ref } from 'vue';
 import { storeToRefs } from 'pinia';
 import { useCartStore } from '@/stores/cart';
 
@@ -160,8 +160,12 @@ import { useCookies } from '@vueuse/integrations/useCookies';
 
 const { toggleDarkTheme, isDark } = useTheme();
 const cookies = useCookies();
+
 const { getCart } = useCartStore();
 const { cart, finalTotal } = storeToRefs(useCartStore());
+
+const homeLink = ref('');
+homeLink.value = import.meta.env.PROD ? import.meta.env.VITE_REPO : '/#/';
 
 onMounted(() => {
   getCart();
