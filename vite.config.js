@@ -12,16 +12,16 @@ export default defineConfig({
   plugins: [vue()],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
-    }
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+    },
   },
   server: {
-    open: true
+    open: true,
   },
   css: {
     devSourcemap: true,
     postcss: {
-      plugins: [tailwind(), autoprefixer()]
-    }
-  }
+      plugins: [tailwind(), autoprefixer()],
+    },
+  },
 });
