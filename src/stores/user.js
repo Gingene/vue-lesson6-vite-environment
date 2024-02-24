@@ -2,6 +2,7 @@ import { ref } from 'vue';
 import { defineStore } from 'pinia';
 import { http, adminPath } from '@/api';
 import { useToast } from '@/components/ui/toast/use-toast';
+
 const { toast } = useToast();
 
 export const useUserStore = defineStore('user', () => {
@@ -20,7 +21,7 @@ export const useUserStore = defineStore('user', () => {
 
     document.cookie = `hexToken=${token};expires=${new Date(expired)}`;
     document.cookie = `hexUid=${uid}`;
-    location.href = '/#/admin/products';
+    location.href = `${location.origin}/#/admin/products`;
 
     toast({
       title: data.message,
@@ -48,12 +49,14 @@ export const useUserStore = defineStore('user', () => {
 
   const logout = async () => {
     const { data } = await http.post(adminPath.logout);
-    console.log(data);
+    // console.log(data);
+
     document.cookie = `hexToken=;expires=${new Date(0)}`;
+    document.cookie = `hexUid=`;
 
     location.href = '/';
     toast({
-      title: '登出成功',
+      title: `${data.message}`,
       description: '',
     });
   };
