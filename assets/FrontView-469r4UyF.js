@@ -1,1 +1,0 @@
-import{u as r,o as n,r as s,a as c,c as m,b as e,F as u,H as l}from"./index-NpP1bDLk.js";const i={__name:"FrontView",setup(_){const{toggleDarkTheme:o,toggleTheme:t}=r();return n(()=>{o(!0),t("theme-blue")}),(p,g)=>{const a=s("RouterView");return c(),m(u,null,[e(l),e(a)],64)}}};export{i as default};
