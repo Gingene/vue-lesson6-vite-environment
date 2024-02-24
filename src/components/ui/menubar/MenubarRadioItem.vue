@@ -1,12 +1,12 @@
 <script setup>
-import { computed } from "vue";
+import { computed } from 'vue';
 import {
   MenubarItemIndicator,
   MenubarRadioItem,
   useForwardPropsEmits,
-} from "radix-vue";
-import { Circle } from "lucide-vue-next";
-import { cn } from "@/lib/utils";
+} from 'radix-vue';
+import { Circle } from 'lucide-vue-next';
+import { cn } from '@/lib/utils';
 
 const props = defineProps({
   value: { type: String, required: true },
@@ -16,7 +16,7 @@ const props = defineProps({
   as: { type: null, required: false },
   class: { type: null, required: false },
 });
-const emits = defineEmits(["select"]);
+const emits = defineEmits(['select']);
 
 const delegatedProps = computed(() => {
   const { class: _, ...delegated } = props;

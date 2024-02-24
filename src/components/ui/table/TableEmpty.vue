@@ -1,8 +1,8 @@
 <script setup>
-import { computed } from "vue";
-import TableRow from "./TableRow.vue";
-import TableCell from "./TableCell.vue";
-import { cn } from "@/lib/utils";
+import { computed } from 'vue';
+import { cn } from '@/lib/utils';
+import TableRow from './TableRow.vue';
+import TableCell from './TableCell.vue';
 
 const props = defineProps({
   class: { type: null, required: false },

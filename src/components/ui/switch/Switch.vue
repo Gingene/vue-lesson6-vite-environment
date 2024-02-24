@@ -1,7 +1,7 @@
 <script setup>
-import { computed } from "vue";
-import { SwitchRoot, SwitchThumb, useForwardPropsEmits } from "radix-vue";
-import { cn } from "@/lib/utils";
+import { computed } from 'vue';
+import { SwitchRoot, SwitchThumb, useForwardPropsEmits } from 'radix-vue';
+import { cn } from '@/lib/utils';
 
 const props = defineProps({
   defaultChecked: { type: Boolean, required: false },
@@ -16,7 +16,7 @@ const props = defineProps({
   class: { type: null, required: false },
 });
 
-const emits = defineEmits(["update:checked"]);
+const emits = defineEmits(['update:checked']);
 
 const delegatedProps = computed(() => {
   const { class: _, ...delegated } = props;

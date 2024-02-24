@@ -1,9 +1,9 @@
 <script setup>
-import { computed } from "vue";
-import { NavigationMenuTrigger, useForwardProps } from "radix-vue";
-import { ChevronDown } from "lucide-vue-next";
-import { navigationMenuTriggerStyle } from ".";
-import { cn } from "@/lib/utils";
+import { computed } from 'vue';
+import { NavigationMenuTrigger, useForwardProps } from 'radix-vue';
+import { ChevronDown } from 'lucide-vue-next';
+import { cn } from '@/lib/utils';
+import { navigationMenuTriggerStyle } from '.';
 
 const props = defineProps({
   disabled: { type: Boolean, required: false },

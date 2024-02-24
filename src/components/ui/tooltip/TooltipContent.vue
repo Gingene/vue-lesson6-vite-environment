@@ -1,7 +1,7 @@
 <script setup>
-import { computed } from "vue";
-import { TooltipContent, TooltipPortal, useForwardPropsEmits } from "radix-vue";
-import { cn } from "@/lib/utils";
+import { computed } from 'vue';
+import { TooltipContent, TooltipPortal, useForwardPropsEmits } from 'radix-vue';
+import { cn } from '@/lib/utils';
 
 defineOptions({
   inheritAttrs: false,
@@ -24,7 +24,7 @@ const props = defineProps({
   class: { type: null, required: false },
 });
 
-const emits = defineEmits(["escapeKeyDown", "pointerDownOutside"]);
+const emits = defineEmits(['escapeKeyDown', 'pointerDownOutside']);
 
 const delegatedProps = computed(() => {
   const { class: _, ...delegated } = props;

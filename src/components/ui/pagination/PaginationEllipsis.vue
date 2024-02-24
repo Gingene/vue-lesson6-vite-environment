@@ -1,8 +1,8 @@
 <script setup>
-import { computed } from "vue";
-import { PaginationEllipsis } from "radix-vue";
-import { MoreHorizontal } from "lucide-vue-next";
-import { cn } from "@/lib/utils";
+import { computed } from 'vue';
+import { PaginationEllipsis } from 'radix-vue';
+import { MoreHorizontal } from 'lucide-vue-next';
+import { cn } from '@/lib/utils';
 
 const props = defineProps({
   asChild: { type: Boolean, required: false },

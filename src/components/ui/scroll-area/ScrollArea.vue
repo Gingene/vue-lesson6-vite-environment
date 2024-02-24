@@ -1,12 +1,12 @@
 <script setup>
-import { computed } from "vue";
+import { computed } from 'vue';
 import {
   ScrollAreaCorner,
   ScrollAreaRoot,
   ScrollAreaViewport,
-} from "radix-vue";
-import ScrollBar from "./ScrollBar.vue";
-import { cn } from "@/lib/utils";
+} from 'radix-vue';
+import { cn } from '@/lib/utils';
+import ScrollBar from './ScrollBar.vue';
 
 const props = defineProps({
   type: { type: String, required: false },

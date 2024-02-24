@@ -1,12 +1,12 @@
 <script setup>
-import { computed } from "vue";
+import { computed } from 'vue';
 import {
   RadioGroupIndicator,
   RadioGroupItem,
   useForwardProps,
-} from "radix-vue";
-import { Circle } from "lucide-vue-next";
-import { cn } from "@/lib/utils";
+} from 'radix-vue';
+import { Circle } from 'lucide-vue-next';
+import { cn } from '@/lib/utils';
 
 const props = defineProps({
   id: { type: String, required: false },
